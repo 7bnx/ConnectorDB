@@ -36,7 +36,7 @@ namespace Avanpost.Interviews.Task.Integration.SandBox.Tests
     {
       IConnector connector = new ConnectorDb();
       connector.StartUp(connectorsCS[provider]);
-      connector.Logger = new FileLogger($"{DateTime.Now}connector{provider}.Log", $"{DateTime.Now}connector{provider}");
+      connector.Logger = new FileLogger($"{DateTime.Now:dd.MM.yyyy_hh.mm.ss}connector{provider}.Log", $"{DateTime.Now}connector{provider}");
       return connector;
     }
 
