@@ -11,8 +11,8 @@ namespace Avanpost.Interviews.Task.Integration.SandBox.Tests
     static string requestRightGroupName = "Request";
     static string itRoleRightGroupName = "Role";
     static string delimeter = ":";
-    static string mssqlConnectionString = "";
-    static string postgreConnectionString = "";
+    static string mssqlConnectionString = "Server=192.168.0.28,1433;Database=testDB;User Id=SA;Password=MyVeryStrongPassword123.;TrustServerCertificate=true;";
+    static string postgreConnectionString = "Server=192.168.0.28;Port=5432;Database=testDB;Username=postgres;Password=12345;";
     static Dictionary<string, string> connectorsCS = new Dictionary<string, string>
         {
             { "MSSQL",$"ConnectionString='{mssqlConnectionString}';Provider='SqlServer.2019';SchemaName='AvanpostIntegrationTestTaskSchema';"},
